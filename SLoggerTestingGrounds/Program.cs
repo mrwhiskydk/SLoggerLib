@@ -6,10 +6,6 @@ namespace SLoggerTestingGrounds
     {
         static void Main(string[] args)
         {
-            /*var slogger = new SLogger();
-            slogger.LogToJson = true;
-            slogger.LogToConsole = true;*/
-
             SLogger slogger = new SLogger
             {
                 LogToConsole = true,
@@ -23,7 +19,7 @@ namespace SLoggerTestingGrounds
 
             try
             {
-                throw new Exception("MessageTextTEST", new InvalidCastException("InvalidCastExceptionTextTEST"));
+                throw new Exception("ExceptionTEST", new InvalidCastException("InvalidCastExceptionTextTEST"));
             }
             catch (Exception ex)
             {
